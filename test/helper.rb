@@ -8,6 +8,9 @@ rescue Bundler::BundlerError => e
   exit e.status_code
 end
 require 'minitest/unit'
+require 'minitest/spec'
+require 'minitest/autorun'
+require 'minitest/pride'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
