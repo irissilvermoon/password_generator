@@ -14,11 +14,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "password_generator"
+  gem.name = "iris_password_generator"
   gem.homepage = "http://github.com/irissilvermoon/password_generator"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = 'Random password generator'
+  gem.description = %Q{Ruby gem which generates a random string of characters of a specified length for password use}
   gem.email = "keaslk@gmail.com"
   gem.authors = ["Karen Caplan"]
   # dependencies defined in Gemfile
