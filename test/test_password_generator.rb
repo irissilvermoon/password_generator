@@ -20,6 +20,16 @@ describe PasswordGenerator do
     password.length.must_equal(16)
   end
 
+  it "should include characters in the specified character set" do
+    password = PasswordGenerator.generate_password
+    password.each_char { |char| PasswordGenerator::CHARACTER_SET.must_include char }
+  end
 
+  it "should always generate a different output" do
+    password1 = PasswordGenerator.generate_password
+    password2 = PasswordGenerator.generate_password
+    
+    password1.wont_equal password2
+  end
 
 end
