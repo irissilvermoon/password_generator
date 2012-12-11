@@ -4,9 +4,9 @@ Generates a random password of a specified length of characters.
 
 == Example
 
-<code> 
-PasswordGenerator.generate_password(12) 
-=> "AlutqnxVzl@M"
+<code> PasswordGenerator.generate_password(12) </code>
+
+<code>=> "AlutqnxVzl@M"
 </code>
 
 == Contributing to password_generator

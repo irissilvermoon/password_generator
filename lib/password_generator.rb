@@ -11,8 +11,8 @@ module PasswordGenerator
     string = ''
 
     length.times do |i| 
-      max_index = CHARACTER_SET.length - 1
-      index = rand(0..max_index)
+      max_index = CHARACTER_SET.length
+      index = rand(max_index)
       character = CHARACTER_SET[index]
       string << character
     end
